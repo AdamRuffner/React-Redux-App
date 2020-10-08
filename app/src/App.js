@@ -42,6 +42,8 @@ const StyledButton = styled.button`
   font-family: 'monaco';
   padding: .5%;
   margin: 2% auto;
+  transition: .2s ease-in-out;
+
   &:hover {
     background-color: red;
     color: black;

@@ -25,7 +25,7 @@ const Card = ({character}) => {
     )
 }
 const StyledParentDiv = styled.div`
-    display: flex;
+    display:flex;
     background-color: #192823;
 `
 
@@ -35,10 +35,11 @@ const StyledCard = styled.div`
     border-radius: 25px;
     align-content: space-between;
     margin: 2% auto;
-    box-shadow: 5px 10px;
+    box-shadow: 10px 10px 10px 10px;
+    transition: .2s ease-in-out;
+
     &:hover {
         background-color:red;
-        transition: .2s ease-in-out;
         transform: scale(1.1);
     }
 
