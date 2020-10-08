@@ -1,16 +1,26 @@
 import React from "react";
 import Card from "./CardMaker";
+import {connect} from 'react-redux';
+import styled from 'styled-components';
 
 const CharacterCards = (props) => {
-  const { characterCard, cards } = props;
-
-  return (
-    <div className="card-wrapper">
-      {cards.map((cardObj) => {
-        return <Card card={cardObj} key={cardObj.id} />;
-      })}
-    </div>
-  );
+    return (
+        <StyledWrapper className="card-wrapper">
+            {props.characters.map(character => {
+                return <Card character={character} />
+            })}
+        </StyledWrapper>
+    );
 };
 
-export default CharacterCards;
+const mapStateToProps = state => {
+    return {
+        characters: state.characters,
+    }
+}
+
+const StyledWrapper = styled.div`
+    background-color: #192823;
+`
+
+export default connect(mapStateToProps)(CharacterCards);
