@@ -24,17 +24,17 @@ const Card = ({character}) => {
         </StyledParentDiv>
     )
 }
-const StyledParentDiv = styled.div`
-    display:flex;
+const StyledParentDiv = styled.div`   
     background-color: #192823;
+    width: 33%;
 `
 
 const StyledCard = styled.div`
     background-color: #06A2CB;
-    width: 25%;
+    width: 50%;
     border-radius: 25px;
     align-content: space-between;
-    margin: 2% auto;
+    margin: 3% auto;
     box-shadow: 10px 10px 10px 10px;
     transition: .2s ease-in-out;
 
