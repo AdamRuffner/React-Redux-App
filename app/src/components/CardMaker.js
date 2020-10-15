@@ -25,7 +25,6 @@ const Card = ({character}) => {
     )
 }
 const StyledParentDiv = styled.div`   
-    background-color: #192823;
     width: 30%;
 
     @media (max-width: 800px) {
@@ -47,7 +46,7 @@ const StyledCard = styled.div`
     padding: 2%;
 
     &:hover {
-        background-color:red;
+        background-color:limegreen;
         transform: scale(1.1);
     }
 

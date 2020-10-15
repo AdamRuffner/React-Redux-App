@@ -49,7 +49,7 @@ const StyledButton = styled.button`
   transition: .2s ease-in-out;
 
   &:hover {
-    background-color: red;
+    background-color: limegreen;
     color: black;
     transition: .2s ease-in-out;
     transform: scale(1.1);
