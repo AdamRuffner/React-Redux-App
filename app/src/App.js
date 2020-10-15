@@ -16,7 +16,7 @@ const fetchCharacters = e => {
 
 return (
   <StyledDiv className="App">
-    <img src="https://i.redd.it/o6cwlzg3exk41.png" alt="header" />
+    <StyledHead src="https://i.redd.it/o6cwlzg3exk41.png" alt="header" />
     <CharacterCards />
     <StyledButton onClick={fetchCharacters}>SHOW ME CHARACTERS</StyledButton>
   </StyledDiv>
@@ -30,6 +30,10 @@ const mapToStateProps = (state) => {
     error: state.error,
   }
 }
+
+const StyledHead = styled.img`
+  width: 100%;
+`
 
 const StyledDiv = styled.div`
   margin: 0 auto;

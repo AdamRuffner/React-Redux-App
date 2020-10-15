@@ -26,17 +26,25 @@ const Card = ({character}) => {
 }
 const StyledParentDiv = styled.div`   
     background-color: #192823;
-    width: 33%;
+    width: 30%;
+
+    @media (max-width: 800px) {
+        width: 50%;
+    }
+    @media (max-width: 500px) {
+        width: 100%;
+    }
 `
 
 const StyledCard = styled.div`
     background-color: #06A2CB;
-    width: 50%;
+    width: 75%;
     border-radius: 25px;
     align-content: space-between;
     margin: 3% auto;
     box-shadow: 10px 10px 10px 10px;
     transition: .2s ease-in-out;
+    padding: 2%;
 
     &:hover {
         background-color:red;
@@ -55,6 +63,11 @@ const InfoDiv = styled.div`
 
 const StyledImg = styled.img`
     border-radius: 25px;
+    width: 75%;
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
 `
 
 export default Card;

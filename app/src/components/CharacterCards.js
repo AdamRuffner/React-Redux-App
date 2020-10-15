@@ -23,6 +23,7 @@ const StyledWrapper = styled.div`
     background-color: #192823;
     display:flex;
     flex-flow: row wrap;
+    justify-content: space-around;
 `
 
 export default connect(mapStateToProps)(CharacterCards);
